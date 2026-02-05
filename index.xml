@@ -3,7 +3,7 @@
 	<information>
 		<name>Diary</name>
 		<version>1.0</version>
-		<description><![CDATA[감도 높은 감성적인 일기장]></description>
+		<description><![CDATA[감도 높은 감성적인 일기장]]></description>
 		<license><![CDATA[MIT License]]></license>
 	</information>
 	<author>
@@ -103,12 +103,12 @@
 			<default>theme_black</default>
 		</variable>
 		<variable>
-			<name>footerCopyright</name>
-			<label>하단 카피라이트</label>
-			<description>하단 로고 옆에 표시될 문구</description>
+			<name>instagramId</name>
+			<label>인스타그램</label>
+			<description>인스타그램 아이디</description>
 			<type>STRING</type>
 			<option></option>
-			<default>© Magazine Lab</default>
+			<default></default>
 		</variable>
 		<variable>
 			<name>footerLink1Name</name>

@@ -134,7 +134,7 @@ body {
 }
 
 .theme_black .search_area .box_form.on .btn_search_del {
-  fill-opacity: 0.54;
+  fill-opacity: 1;
 }
 
 /* black: 슬라이드 */
@@ -174,7 +174,7 @@ body {
 }
 
 .theme_black .box_tag_trail .tag_cont a {
-  color: #000;
+  color: #fff;
 }
 
 .theme_black .box_comment .comment_area .btn_more {
@@ -285,7 +285,7 @@ body {
 }
 
 .theme_vintage .search_area .box_form.on .btn_search_del {
-  fill-opacity: 0.54;
+  fill-opacity: 1;
 }
 
 /* blue: 슬라이드 */
@@ -436,14 +436,15 @@ select::-ms-expand {
 /* header */
 .header {
   height: 86px;
-  box-shadow:
+  /* box-shadow:
     0 1px rgba(0, 0, 0, 0.1),
-    0 -1px rgba(0, 0, 0, 0.1);
+    0 -1px rgba(0, 0, 0, 0.1); */
   background-color: #fff;
   z-index: 9999;
   transition: background 0.1s;
   backdrop-filter: saturate(180%) blur(16px);
   -webkit-backdrop-filter: saturate(180%) blur(16px);
+  border-bottom: 1px solid #000;
 }
 
 .header:after {
@@ -458,8 +459,8 @@ select::-ms-expand {
 
 .header h1 a,
 .ly_area .ly_logo a {
-  font-size: 26px;
-  color: #f25555;
+  font-size: 16px;
+  color: #000;
   line-height: 32px;
   font-weight: 600;
 }
@@ -712,7 +713,7 @@ select::-ms-expand {
 .nav .link_menu {
   display: block;
   margin-bottom: 12px;
-  font-size: 18px;
+  font-size: 13px;
   line-height: 32px;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.84);
@@ -795,7 +796,7 @@ select::-ms-expand {
   padding: 6px;
   background-color: transparent;
   cursor: pointer;
-  fill-opacity: 0.3;
+  fill-opacity: 1;
 }
 
 .search_area .box_form.on {
@@ -807,7 +808,7 @@ select::-ms-expand {
 }
 
 .search_area .box_form.on .btn_search_del {
-  fill-opacity: 0.54;
+  fill-opacity: 1;
 }
 
 /* 컨텐츠 */
@@ -1021,7 +1022,7 @@ select::-ms-expand {
 .list_post .box_thumb .no_img {
   display: block;
   position: relative;
-  background-color: #90949c;
+  background-color: #fff;
 }
 
 .section_area .scroller .item_scroller .link_item .box_thumb .default_img {
@@ -1121,7 +1122,7 @@ select::-ms-expand {
 
 .list_article .link_thumb .box_thumb.no_img {
   position: relative;
-  background-color: #90949c;
+  background-color: #fff;
 }
 
 .list_article .link_thumb .box_thumb .default_img {
@@ -1273,7 +1274,7 @@ select::-ms-expand {
 /* 서브 리스트 */
 .sub_content .section_area .tit_section {
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 13px;
 }
 
 .sub_content .list_sub {
@@ -1736,12 +1737,21 @@ select::-ms-expand {
   border-top: 1px solid #ececec;
 }
 
+.box_tag_trail .tag_cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  color: #fff;
+}
+
 .box_tag_trail .tag_cont a {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.41;
   font-weight: 300;
-  color: #f25555;
-  margin-left: 8px;
+  color: #fff;
+  padding: 2px 8px;
+  background-color: #333;
+  border-radius: 18px;
 }
 
 .box_tag_trail .tag_cont a:first-child {
@@ -2127,7 +2137,7 @@ select::-ms-expand {
 .footer {
   overflow: hidden;
   margin-top: 116px;
-  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 1px solid #000;
 }
 
 .footer .area_select {
@@ -2221,6 +2231,10 @@ select::-ms-expand {
   display: inline-block;
   opacity: 0.54;
   vertical-align: middle;
+}
+
+.footer .area_address .area_sns img {
+  height: 14px;
 }
 
 .footer .link_facebook {
@@ -2468,7 +2482,7 @@ select::-ms-expand {
   }
 
   .nav .link_menu {
-    font-size: 18px;
+    font-size: 13px;
     margin-bottom: 12px;
   }
 
@@ -3210,9 +3224,9 @@ select::-ms-expand {
 
 .section_paging .paging .link_num {
   display: inline-block;
-  font-size: 15px;
-  line-height: 1.33;
-  font-weight: bold;
+  font-size: 13px;
+  line-height: 1.5;
+  font-weight: 300;
   color: rgba(0, 0, 0, 0.54);
   text-align: center;
 }
@@ -3358,9 +3372,9 @@ select::-ms-expand {
   display: block;
   margin: 0 12px;
   padding-top: 91.5%;
-  background-image: url(./images/no_img.jpg);
   background-size: cover;
   background-position: 50% 50%;
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .list_post .item_post:hover .link_post:before {
@@ -3370,7 +3384,7 @@ select::-ms-expand {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .list_post .link_post:hover .info {
@@ -3393,15 +3407,15 @@ select::-ms-expand {
 .list_post .link_post .info .name {
   display: block;
   width: calc(100% - 80px);
-  max-height: 65px;
+  max-height: 120px;
   margin: 0 auto;
-  font-size: 18px;
+  font-size: 13px;
   font-weight: 400;
   line-height: 24px;
   text-overflow: ellipsis;
   overflow: hidden;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
 }
 
@@ -3487,9 +3501,9 @@ select::-ms-expand {
   width: 180px;
   height: 122px;
   margin-right: 24px;
-  background-image: url(./images/no_img.jpg);
   background-size: cover;
   background-position: 50% 50%;
+  border: 1px solid rgba(0, 0, 0, 0.06);
 }
 
 .list_notice .info {
@@ -3686,7 +3700,7 @@ select::-ms-expand {
 
   .header .link_logo {
     padding: 14px 0;
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .header .btn_box {
@@ -3701,7 +3715,7 @@ select::-ms-expand {
 
   .header h1 a,
   .ly_area .ly_logo a {
-    font-size: 22px;
+    font-size: 16px;
   }
 
   .ly_header {
