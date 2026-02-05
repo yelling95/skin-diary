@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <skin>
 	<information>
-		<name>Magazine</name>
+		<name>Diary</name>
 		<version>1.0</version>
-		<description><![CDATA[이 주제는 내가 전문가!
-		이제부터 여러분의 시선이 돋보이는 매거진을 만들 수 있습니다.]]></description>
+		<description><![CDATA[감도 높은 감성적인 일기장]></description>
 		<license><![CDATA[MIT License]]></license>
 	</information>
 	<author>
-		<name>TISTORY</name>
-		<homepage>https://www.tistory.com</homepage>
-		<email>tistoryblog@daum.net</email>
+		<name>Veronica</name>
+		<homepage>https://veronica95.vercel.app</homepage>
+		<email>yelling95@daum.net</email>
 	</author>
 	<default>
 		<entriesOnPage>8</entriesOnPage>
@@ -96,12 +95,12 @@
 			<type>SELECT</type>
 			<option><![CDATA[
 				[
-					{"name":"theme_red", "label":"레드", "value":"theme_red"},
 					{"name":"theme_black", "label":"블랙", "value":"theme_black"},
-					{"name":"theme_blue", "label":"블루", "value":"theme_blue"}
+					{"name":"theme_red", "label":"레드", "value":"theme_red"},
+					{"name":"theme_vintage", "label":"빈티지", "value":"theme_vintage"}
 				]
 			]]></option>
-			<default>theme_red</default>
+			<default>theme_black</default>
 		</variable>
 		<variable>
 			<name>footerCopyright</name>
