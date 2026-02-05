@@ -103,6 +103,32 @@
 			<default>theme_black</default>
 		</variable>
 		<variable>
+			<name>sliderArrowColor</name>
+			<label>슬라이더 화살표</label>
+			<description>슬라이더 화살표 색상</description>
+			<type>SELECT</type>
+			<option><![CDATA[
+				[
+					{"name":"black", "label":"블랙", "value":"black"},
+					{"name":"white", "label":"화이트", "value":"white"}
+				]
+			]]></option>
+			<default>black</default>
+		</variable>
+		<variable>
+			<name>sliderTextColor</name>
+			<label>슬라이더 텍스트</label>
+			<description>슬라이더 텍스트 색상</description>
+			<type>SELECT</type>
+			<option><![CDATA[
+				[
+					{"name":"black", "label":"블랙", "value":"black"},
+					{"name":"white", "label":"화이트", "value":"white"}
+				]
+			]]></option>
+			<default>black</default>
+		</variable>
+		<variable>
 			<name>instagramId</name>
 			<label>인스타그램</label>
 			<description>인스타그램 아이디</description>
