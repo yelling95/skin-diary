@@ -129,6 +129,14 @@
 			<default>black</default>
 		</variable>
 		<variable>
+			<name>isUseSidebar</name>
+			<label>사이드바</label>
+			<description>사이드바 사용여부(사용할경우 아무값입력)</description>
+			<type>STRING</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
 			<name>instagramId</name>
 			<label>인스타그램</label>
 			<description>인스타그램 아이디</description>

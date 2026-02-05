@@ -1662,7 +1662,6 @@ select::-ms-expand {
 .box_article .article_cont .article_util .box_util {
   float: left;
   position: relative;
-  margin-left: 12px;
 }
 
 .box_article .article_cont .article_util .util_comment {
@@ -2686,16 +2685,13 @@ select::-ms-expand {
 
   /* 서브상세 */
   .wrap_content.wrap_detail_content {
-    margin: 84px auto 0 auto;
-    padding-left: 24px;
-    padding-right: 24px;
+    margin: 48px auto 0 auto;
     max-width: 1200px;
     display: block;
   }
 
   .content.sub_detail {
     float: left;
-    width: calc(100% - 375px);
   }
 
   .content.sub_detail .section_area {
@@ -3024,7 +3020,7 @@ select::-ms-expand {
 
   .sidebar .tit_section {
     margin-bottom: 16px;
-    font-size: 16px;
+    font-size: 13px;
     font-weight: bold;
     color: #f25555;
   }
@@ -3533,7 +3529,6 @@ select::-ms-expand {
 }
 
 #content_cover_group .list_notice .text {
-  max-width: 780px;
   line-height: 22px;
   margin: 5px 0 10px 0;
 }
@@ -3855,13 +3850,12 @@ select::-ms-expand {
 /* 전체 공통 */
 #article-view {
   margin: 0;
-  padding: 20px 20px 50px;
   word-wrap: break-word;
   color: #000;
   min-height: 370px;
   font-family:
-    -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Apple SD Gothic Neo",
-    Arial, sans-serif;
+    "Spoqa Han Sans", Dotum, "돋움", Helvetica, "Apple SD Gothic Neo",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   letter-spacing: 0;

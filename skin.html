@@ -225,7 +225,7 @@
                               </defs>
                               <g fill="none" fill-rule="evenodd">
                                 <path d="M0 0h40v40H0z" />
-                                <use fill="#fff" fill-rule="nonzero" xlink:href="#mainSlideArrowLeft" />
+                                <use fill="[##_var_sliderArrowColor_##]" fill-rule="nonzero" xlink:href="#mainSlideArrowLeft" />
                               </g>
                             </svg>
                           </span>
@@ -239,7 +239,7 @@
                               </defs>
                               <g fill="none" fill-rule="evenodd">
                                 <path d="M0 0h40v40H0z" />
-                                <use fill="#fff" fill-rule="nonzero" xlink:href="#mainSlideArrowRight" />
+                                <use fill="[##_var_sliderArrowColor_##]" fill-rule="nonzero" xlink:href="#mainSlideArrowRight" />
                               </g>
                             </svg>
                           </span>
@@ -477,9 +477,11 @@
                       <s_cover_item>
                         <li class="item_notice">
                           <a href="[##_cover_item_url_##]" class="link_notice">
-                            <span class="thumnail item-thumbnail"
-                              <s_cover_item_thumbnail>style="background-image:url('[##_cover_item_thumbnail_##]')"
-                              </s_cover_item_thumbnail>></span>
+                            <s_cover_item_thumbnail>
+                              <span class="thumnail item-thumbnail"
+                                style="background-image:url('[##_cover_item_thumbnail_##]')"></span>
+                            </s_cover_item_thumbnail>
+                            
                             <div class="info">
                               <p class="tit_notice">[##_cover_item_title_##]</p>
                               <p class="text">[##_cover_item_summary_##]</p>
@@ -581,7 +583,8 @@
 
           <!-- 치환자 <s_article_rep> 적용 -->
           <s_permalink_article_rep>
-            <div id="content_permallink_article" class="content sub_content sub_detail">
+            <div id="content_permallink_article" class="content sub_content sub_detail" 
+              <s_if_var_isUseSidebar>style="width: calc(100% - 375px);"</s_if_var_isUseSidebar>>
               <div class="inner_content">
                 <div class="section_area detail_area">
 
@@ -847,98 +850,100 @@
         </s_notice_rep>
 
         <!-- sidebar -->
-        <div id="sidebar" class="sidebar">
-          <h2 class="blind">추가 정보</h2>
-          <s_sidebar>
-            <s_sidebar_element>
-              <div class="section_area">
-                <h3 class="tit_section">인기글</h3>
-                <ol class="list_article list_sub list_sidebar">
-                  <s_rctps_popular_rep>
-                    <li>
-                      <a href="[##_rctps_rep_link_##]" class="link_thumb">
-                        <s_rctps_rep_thumbnail>
-                          <div class="box_thumb thumb_img" style="background-image:url('[##_rctps_rep_thumbnail_##]')">
+        <s_if_var_isUseSidebar>
+          <div id="sidebar" class="sidebar">
+            <h2 class="blind">추가 정보</h2>
+            <s_sidebar>
+              <s_sidebar_element>
+                <div class="section_area">
+                  <h3 class="tit_section">인기글</h3>
+                  <ol class="list_article list_sub list_sidebar">
+                    <s_rctps_popular_rep>
+                      <li>
+                        <a href="[##_rctps_rep_link_##]" class="link_thumb">
+                          <s_rctps_rep_thumbnail>
+                            <div class="box_thumb thumb_img" style="background-image:url('[##_rctps_rep_thumbnail_##]')">
+                              <span class="item_count">-</span>
+                            </div>
+                          </s_rctps_rep_thumbnail>
+                          <div class="box_thumb no_img">
+                            <div class="default_img">
+                              <span class="box_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                  class="img_svg">
+                                  <defs>
+                                    <path id="errorIconSvg"
+                                      d="M18.5 27.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM21 11h-2v13h2V11zm-1-9C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm0 34c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16a16 16 0 0 1-16 16z">
+                                    </path>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <path d="M0 0h40v40H0z"></path>
+                                    <use fill="#fff" fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="#errorIconSvg"></use>
+                                  </g>
+                                </svg>
+                              </span>
+                            </div>
                             <span class="item_count">-</span>
                           </div>
-                        </s_rctps_rep_thumbnail>
-                        <div class="box_thumb no_img">
-                          <div class="default_img">
-                            <span class="box_svg">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
-                                class="img_svg">
-                                <defs>
-                                  <path id="errorIconSvg"
-                                    d="M18.5 27.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM21 11h-2v13h2V11zm-1-9C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm0 34c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16a16 16 0 0 1-16 16z">
-                                  </path>
-                                </defs>
-                                <g fill="none" fill-rule="evenodd">
-                                  <path d="M0 0h40v40H0z"></path>
-                                  <use fill="#fff" fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    xlink:href="#errorIconSvg"></use>
-                                </g>
-                              </svg>
-                            </span>
+
+                          <div class="cont_thumb">
+                            <strong class="txt_thumb">[##_rctps_rep_title_##]</strong>
+                            <p class="txt_date">[##_rctps_rep_date_##]</p>
                           </div>
-                          <span class="item_count">-</span>
-                        </div>
-
-                        <div class="cont_thumb">
-                          <strong class="txt_thumb">[##_rctps_rep_title_##]</strong>
-                          <p class="txt_date">[##_rctps_rep_date_##]</p>
-                        </div>
-                      </a>
-                    </li>
-                  </s_rctps_popular_rep>
-                </ol>
-              </div> <!-- 인기글 -->
-            </s_sidebar_element>
+                        </a>
+                      </li>
+                    </s_rctps_popular_rep>
+                  </ol>
+                </div> <!-- 인기글 -->
+              </s_sidebar_element>
 
 
-            <s_sidebar_element>
-              <div class="section_area">
-                <h3 class="tit_section">최신글</h3>
-                <ol class="list_article list_sub list_sidebar list_recent">
-                  <s_rctps_rep>
-                    <li>
-                      <a href="[##_rctps_rep_link_##]" class="link_thumb">
-                        <s_rctps_rep_thumbnail>
-                          <div class="box_thumb thumb_img" style="background-image:url('[##_rctps_rep_thumbnail_##]')">
+              <s_sidebar_element>
+                <div class="section_area">
+                  <h3 class="tit_section">최신글</h3>
+                  <ol class="list_article list_sub list_sidebar list_recent">
+                    <s_rctps_rep>
+                      <li>
+                        <a href="[##_rctps_rep_link_##]" class="link_thumb">
+                          <s_rctps_rep_thumbnail>
+                            <div class="box_thumb thumb_img" style="background-image:url('[##_rctps_rep_thumbnail_##]')">
+                              <span class="item_count">-</span>
+                            </div>
+                          </s_rctps_rep_thumbnail>
+                          <div class="box_thumb no_img">
+                            <div class="default_img">
+                              <span class="box_svg">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                  class="img_svg">
+                                  <defs>
+                                    <path id="errorIconSvg"
+                                      d="M18.5 27.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM21 11h-2v13h2V11zm-1-9C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm0 34c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16a16 16 0 0 1-16 16z">
+                                    </path>
+                                  </defs>
+                                  <g fill="none" fill-rule="evenodd">
+                                    <path d="M0 0h40v40H0z"></path>
+                                    <use fill="#fff" fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                      xlink:href="#errorIconSvg"></use>
+                                  </g>
+                                </svg>
+                              </span>
+                            </div>
                             <span class="item_count">-</span>
                           </div>
-                        </s_rctps_rep_thumbnail>
-                        <div class="box_thumb no_img">
-                          <div class="default_img">
-                            <span class="box_svg">
-                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
-                                class="img_svg">
-                                <defs>
-                                  <path id="errorIconSvg"
-                                    d="M18.5 27.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM21 11h-2v13h2V11zm-1-9C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm0 34c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16a16 16 0 0 1-16 16z">
-                                  </path>
-                                </defs>
-                                <g fill="none" fill-rule="evenodd">
-                                  <path d="M0 0h40v40H0z"></path>
-                                  <use fill="#fff" fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                    xlink:href="#errorIconSvg"></use>
-                                </g>
-                              </svg>
-                            </span>
+                          <div class="cont_thumb">
+                            <strong class="txt_thumb">[##_rctps_rep_title_##]</strong>
+                            <p class="txt_category">[##_rctps_rep_category_##]</p>
                           </div>
-                          <span class="item_count">-</span>
-                        </div>
-                        <div class="cont_thumb">
-                          <strong class="txt_thumb">[##_rctps_rep_title_##]</strong>
-                          <p class="txt_category">[##_rctps_rep_category_##]</p>
-                        </div>
-                      </a>
-                    </li>
-                  </s_rctps_rep>
-                </ol>
-              </div> <!-- 최신글 -->
-            </s_sidebar_element>
-          </s_sidebar>
-        </div>
+                        </a>
+                      </li>
+                    </s_rctps_rep>
+                  </ol>
+                </div> <!-- 최신글 -->
+              </s_sidebar_element>
+            </s_sidebar>
+          </div>
+        </s_if_var_isUseSidebar>
         <!-- // sidebar -->
       </div>
       <!-- // sub page // .wrap_detail_content -->
