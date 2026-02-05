@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<skin>
+	<information>
+		<name>Magazine</name>
+		<version>1.0</version>
+		<description><![CDATA[이 주제는 내가 전문가!
+		이제부터 여러분의 시선이 돋보이는 매거진을 만들 수 있습니다.]]></description>
+		<license><![CDATA[MIT License]]></license>
+	</information>
+	<author>
+		<name>TISTORY</name>
+		<homepage>https://www.tistory.com</homepage>
+		<email>tistoryblog@daum.net</email>
+	</author>
+	<default>
+		<entriesOnPage>8</entriesOnPage>
+		<entriesOnList>8</entriesOnList>
+		<recentEntries>4</recentEntries>
+		<recentComments>5</recentComments>
+		<recentTrackbacks>5</recentTrackbacks>
+		<itemsOnGuestbook>5</itemsOnGuestbook>
+		<tagsInCloud>20</tagsInCloud>
+		<sortInCloud>3</sortInCloud>
+		<expandComment>1</expandComment>
+		<lengthOfRecentNotice>30</lengthOfRecentNotice>
+		<lengthOfRecentEntry>100</lengthOfRecentEntry>
+		<lengthOfRecentComment>40</lengthOfRecentComment>
+		<lengthOfRecentTrackback>40</lengthOfRecentTrackback>
+		<lengthOfLink>30</lengthOfLink>
+		<commentMessage>
+			<none>0</none>
+			<single>1</single>
+		</commentMessage>
+		<trackbackMessage>
+			<none>0</none>
+			<single>1</single>
+		</trackbackMessage>
+		<contentWidth>725</contentWidth>
+		<toolbar>white</toolbar>
+	</default>
+	<cover>
+		<item>
+			<name>image_slide</name>
+			<label><![CDATA[ 슬라이더 ]]></label>
+			<description><![CDATA[ 글의 대표 이미지를 한장씩 출력하는 슬라이더입니다.]]></description>
+		</item>
+		<item>
+			<name>webzine</name>
+			<label><![CDATA[ 섬네일 리스트 1 ]]></label>
+			<description><![CDATA[ 웹진 형태의 리스트를 표현합니다.
+				2개 이상의 콘텐츠 노출을 권장합니다. ]]></description>
+		</item>
+		<item>
+			<name>gallery</name>
+			<label><![CDATA[ 섬네일 리스트 2 ]]></label>
+			<description><![CDATA[ 정사각형 섬네일을 활용한 리스트입니다.
+				4개 이상의 콘텐츠 노출을 권장합니다.  ]]></description>
+		</item>
+		<item>
+			<name>slide_list1</name>
+			<label><![CDATA[ 슬라이드 리스트 1 ]]></label>
+			<description><![CDATA[ 세로 직사각형 섬네일 목록을 슬라이더로 출력합니다. ]]></description>
+		</item>
+		<item>
+			<name>slide_list2</name>
+			<label><![CDATA[ 슬라이드 리스트 2 ]]></label>
+			<description><![CDATA[ 가로 직사각형 섬네일 목록을 슬라이더로 출력합니다. ]]></description>
+		</item>
+		<item>
+			<name>text_list</name>
+			<label><![CDATA[ 리스트 ]]></label>
+			<description><![CDATA[ 좌측 섬네일을 포함한 일반적인 리스트 형태로 표현합니다. ]]></description>
+		</item>
+	</cover>
+	<variables>
+		<variable>
+			<name>logoImage</name>
+			<label>상단 로고 (높이 64px)</label>
+			<description></description>
+			<type>IMAGE</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
+			<name>logoFooterImage</name>
+			<label>하단 로고 (높이 48px)</label>
+			<description></description>
+			<type>IMAGE</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
+			<name>colorSet</name>
+			<label>컬러셋</label>
+			<description></description>
+			<type>SELECT</type>
+			<option><![CDATA[
+				[
+					{"name":"theme_red", "label":"레드", "value":"theme_red"},
+					{"name":"theme_black", "label":"블랙", "value":"theme_black"},
+					{"name":"theme_blue", "label":"블루", "value":"theme_blue"}
+				]
+			]]></option>
+			<default>theme_red</default>
+		</variable>
+		<variable>
+			<name>footerCopyright</name>
+			<label>하단 카피라이트</label>
+			<description>하단 로고 옆에 표시될 문구</description>
+			<type>STRING</type>
+			<option></option>
+			<default>© Magazine Lab</default>
+		</variable>
+		<variable>
+			<name>footerLink1Name</name>
+			<label>하단 링크1 이름</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>TISTORY</default>
+		</variable>
+		<variable>
+			<name>footerLink1Url</name>
+			<label>하단 링크1 URL</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>https://tistory.com</default>
+		</variable>
+		<variable>
+			<name>footerLink2Name</name>
+			<label>하단 링크2 이름</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
+			<name>footerLink2Url</name>
+			<label>하단 링크2 URL</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
+			<name>footerLink3Name</name>
+			<label>하단 링크3 이름</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
+			<name>footerLink3Url</name>
+			<label>하단 링크3 URL</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
+			<name>footerLink4Name</name>
+			<label>하단 링크4 이름</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
+			<name>footerLink4Url</name>
+			<label>하단 링크4 URL</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default></default>
+		</variable>
+		<variable>
+			<name>snsFacebook</name>
+			<label>페이스북 URL</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>#</default>
+		</variable>
+		<variable>
+			<name>snsTwitter</name>
+			<label>트위터 URL</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>#</default>
+		</variable>
+		<variable>
+			<name>snsInstagram</name>
+			<label>인스타그램 URL</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>#</default>
+		</variable>
+		<variable>
+			<name>snsYoutube</name>
+			<label>유튜브 URL</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>#</default>
+		</variable>
+		<variable>
+			<name>email</name>
+			<label>이메일 주소</label>
+			<description></description>
+			<type>STRING</type>
+			<option></option>
+			<default>#</default>
+		</variable>
+	</variables>
+</skin>

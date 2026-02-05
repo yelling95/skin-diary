@@ -1,0 +1,55 @@
+<svg id="유튜브" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="22" viewBox="0 0 24 22">
+  <metadata><?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c138 79.159824, 2016/09/14-01:09:01        ">
+   <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+      <rdf:Description rdf:about=""/>
+   </rdf:RDF>
+</x:xmpmeta>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                           
+<?xpacket end="w"?></metadata>
+<defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #757575;
+      }
+
+      .cls-1, .cls-4 {
+        fill-rule: evenodd;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        opacity: 0.7;
+      }
+
+      .cls-4 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <path id="인스타" class="cls-1" d="M59,0H71a5,5,0,0,1,5,5V17a5,5,0,0,1-5,5H59a5,5,0,0,1-5-5V5A5,5,0,0,1,59,0Zm0,2H71a3,3,0,0,1,3,3V17a3,3,0,0,1-3,3H59a3,3,0,0,1-3-3V5A3,3,0,0,1,59,2Zm6,3a6,6,0,1,1-6,6A6,6,0,0,1,65,5Zm0,2a4,4,0,1,1-4,4A4,4,0,0,1,65,7Zm6-3a1,1,0,1,1-1,1A1,1,0,0,1,71,4Z"/>
+  <path id="메일" class="cls-1" d="M173,20H161a5,5,0,0,1-5-5V7a5,5,0,0,1,5-5h12a5,5,0,0,1,5,5v8A5,5,0,0,1,173,20Zm-15-5a3,3,0,0,0,3,3h12a3,3,0,0,0,3-3V7a2.967,2.967,0,0,0-.164-0.937l-1.765,1.765-3.535,3.536a5,5,0,0,1-7.072,0l-3.535-3.536-1.765-1.765A2.967,2.967,0,0,0,158,7v8Zm3-11a2.976,2.976,0,0,0-1.6.471l1.236,1.236,0.707,0.707,3.536,3.536a3,3,0,0,0,4.242,0l3.536-3.536,0.707-.707L174.6,4.471A2.976,2.976,0,0,0,173,4H161Z"/>
+  <image id="트위터" class="cls-2" x="105" y="2" width="21" height="17" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAARCAQAAACYjy8LAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfiCxYNLjsnLlogAAABO0lEQVQoz4XRPUtbURgA4CfxaqtxUClStJk6uHTwY2ksndTf4FL/g4MuQsUugpcuLm6lg4iDSykIDg6aoUOHVhQEEQqlfoIhSSkSUhs73MbE60ff5Zz3nOd9zzmcxCQtzsWj0aghj+RtWFbSr5CYZMG8vWuwwYzeq+xEs5yJpHZpszLX6HAd5LGUA6NJFTSZMq79ajMTu06g1Uqg6Ic0hry0KWtXWWuM5r0JK4GE96ZBkxEjKo61xWg5rJDU5ZWjuuWkbqkYPYtucaTjRpd4fIt6XFryv9iKKGveKd0Di75UKb/s30M/hBc1uuPpnfDYx+p74dRrh7fC396G5Wja8CIac1YV9P0rrcaFuXC79mXw0DPDMjH405ztWhoYNObJjYP/WLeoWL8U+OSzAc/16PTApZzvvsrKx6v/An9MTAxQAPJrAAAAAElFTkSuQmCC"/>
+  <rect id="box" class="cls-3" y="2" width="24" height="18" rx="5" ry="5"/>
+  <path id="_" data-name="&gt;" class="cls-4" d="M10,15V7l6,4Z"/>
+  <path id="페북" class="cls-1" d="M-30,7v4h-4V22h-4V11h-3V7h3V4a4,4,0,0,1,4-4h4V4h-2a2,2,0,0,0-2,2V7h4Z"/>
+</svg>

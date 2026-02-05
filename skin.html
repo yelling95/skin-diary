@@ -1,0 +1,1102 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>[##_page_title_##]</title>
+  <meta name="title" content="[##_page_title_##]" />
+  <meta charset="utf-8" />
+  <meta name="viewport"
+    content="width=device-width, height=device-height, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+  <link rel="alternate" type="application/rss+xml" title="[##_title_##]" href="[##_rss_url_##]" />
+
+  <link rel="stylesheet" href="./images/webfonticon.css" />
+  <link rel="stylesheet" href="./images/slick.css" />
+  <link rel="stylesheet" href="./style.css" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.js"></script>
+  <script src="./images/slick.js"></script>
+  <script src="./images/iscroll.js"></script>
+  <script src="./images/front.js"></script>
+  <script src="./images/common.js"></script>
+</head>
+
+<body id="[##_body_id_##]" class="[##_var_colorSet_##]">
+  <!-- theme -->
+  <s_t3>
+    <div id="container">
+      <div id="header" class="header">
+        <div class="inner_header">
+          <div class="box_header">
+            <h1 class="logo">
+              <a href="[##_blog_link_##]" title="[##_title_##]" class="link_logo">
+                <s_if_var_logoImage>
+                  <img src="[##_var_logoImage_##]" class="img_logo" alt="로고 이미지">
+                </s_if_var_logoImage>
+                <s_not_var_logoImage>
+                  [##_title_##]
+                </s_not_var_logoImage>
+              </a>
+            </h1>
+            <div class="btn_box">
+              <!-- GNB -->
+              <button type="button" class="btn_util btn_search" title="검색"><span class="blind">검색</span></button>
+              <button type="button" class="btn_util btn_menu" title="메뉴"><span class="blind">메뉴</span></button>
+            </div>
+          </div>
+          <!-- fixed menu only detail -->
+          <div class="box_header box_fix_header">
+            <h2 class="blind">고정 헤더 영역</h2>
+            <div class="area_menu">
+              <a href="#" title="페이지 뒤로가기" class="btn_util link_back">
+                <span class="box_svg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="15" height="26" viewBox="0 0 15 26" class="img_svg">
+                    <defs>
+                      <path id="mainSlideArrowLeft" d="M12 20L25 7l1.4 1.4L14.8 20l11.6 11.6L25 33z"></path>
+                    </defs>
+                    <g fill="none" fill-rule="evenodd" transform="translate(-13 -5)">
+                      <path d="M0 0h40v40H0z"></path>
+                      <mask id="mainSlideArrowLeftMask" fill="#fff">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#mainSlideArrowLeft"></use>
+                      </mask>
+                      <g fill="#fff" fill-opacity="1" mask="url(#mainSlideArrowLeftMask)" class="svg_bg">
+                        <path d="M0 0h40v40H0z"></path>
+                      </g>
+                    </g>
+                  </svg>
+                </span>
+              </a>
+              <div class="box_fix_tit">
+                <span class="blind">글 제목</span>
+                <p class="txt_fix_tit"></p>
+              </div>
+              <button type="button" class="btn_util btn_menu" title="메뉴"><span class="blind">메뉴</span></button>
+            </div>
+            <div class="area_util">
+              <div class="inner_area_util">
+                <button type="button" class="util_like">
+                  <span class="blind">좋아요</span>
+                  <i class="icon_font icon-favorite-o"></i>
+                  <span class="txt_count">-</span>
+                </button>
+                <div class="box_util">
+                  <button type="button" class="util_comment">
+                    <span class="blind">댓글달기</span>
+                    <i class="icon_font icon-chat-o"></i>
+                    <span class="txt_count">-</span>
+                  </button>
+                  <button type="button" class="util_share">
+                    <span class="blind">공유하기</span>
+                    <i class="icon_font icon-share-alt-o"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div> <!-- header close -->
+
+      [##_revenue_list_upper_##]
+
+      <div class="ly_area nav" style="display:none">
+        <div class="inner_ly_area">
+          <div class="ly_header">
+            <h2 class="blind">메뉴 레이어</h2>
+            <div class="ly_logo">
+              <a href="[##_blog_link_##]" title="[##_title_##]" class="link_logo">
+                <s_if_var_logoImage>
+                  <img src="[##_var_logoImage_##]" class="img_logo" alt="로고 이미지">
+                </s_if_var_logoImage>
+                <s_not_var_logoImage>
+                  [##_title_##]
+                </s_not_var_logoImage>
+              </a>
+            </div>
+            <button type="button" title="레이어 닫기" class="btn_menu_close btn_ly_close">
+
+            </button>
+          </div> <!-- ly_header -->
+          <h3 class="blind">메뉴 리스트</h3>
+
+          <div class="tistory_support_menus">
+            [##_blog_menu_##]
+            [##_category_list_##]
+          </div>
+
+          <div class="box_home">
+          </div>
+          <ul class="list_category">
+          </ul>
+        </div>
+      </div> <!-- nav -->
+      <div class="ly_area search_area" style="display:none">
+        <div class="inner_ly_area">
+          <div class="ly_header">
+            <h2 class="blind">검색 레이어</h2>
+            <div class="ly_logo">
+              <a href="[##_blog_link_##]" title="[##_title_##]" class="link_logo">
+                <s_if_var_logoImage>
+                  <!-- logo img -->
+                  <img src="[##_var_logoImage_##]" class="img_logo" alt="로고 이미지">
+                </s_if_var_logoImage>
+                <s_not_var_logoImage>
+                  [##_title_##]
+                </s_not_var_logoImage>
+              </a>
+            </div>
+            <button type="button" title="레이어 닫기" class="btn_menu_close btn_ly_close">
+              <span class="box_svg">
+                <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 28 28" class="img_svg">
+                  <defs>
+                    <path id="searchCloseSvg"
+                      d="M33.4 8L32 6.6l-12 12-12-12L6.6 8l12 12-12 12L8 33.4l12-12 12 12 1.4-1.4-12-12z" />
+                  </defs>
+                </svg>
+              </span>
+            </button>
+          </div> <!-- ly_header -->
+          <h3 class="blind">검색 영역</h3>
+          <form action="" method="get">
+            <legend><span class="blind">컨텐츠 검색</span></legend>
+            <div class="box_form">
+              <s_search>
+                <label for="[##_search_name_##]" class="screen_out">블로그 내 검색</label>
+                <input id="[##_search_name_##]" type="text" name="[##_search_name_##]" title="검색어 입력"
+                  placeholder="검색어 입력.." value="[##_search_text_##]" class="inp_search"
+                  onkeypress="if (event.keyCode == 13) { [##_search_onclick_submit_##] }">
+              </s_search>
+              <button type="button" title="검색어 삭제" class="btn_search_del">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 36 36" class="img_svg">
+                  <defs>
+                    <path id="textDelBtnSvg"
+                      d="M20 2C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm8 24.6L26.6 28 20 21.4 13.4 28 12 26.6l6.6-6.6-6.6-6.6 1.4-1.4 6.6 6.6 6.6-6.6 1.4 1.4-6.6 6.6 6.6 6.6z" />
+                  </defs>
+                  <g fill="none" fill-rule="evenodd" transform="translate(-2 -2)">
+                    <path d="M0 0h40v40H0z" />
+                    <mask id="textDelBtnSvgMask" fill="#fff">
+                      <use xlink:href="#textDelBtnSvg" />
+                    </mask>
+                    <g fill="#000" fill-opacity="1" mask="url(#textDelBtnSvgMask)" class="svg_bg">
+                      <path d="M0 0h40v40H0z" />
+                    </g>
+                  </g>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div> <!-- search_area -->
+
+
+
+      <div class="wrap_content">
+        <s_cover_group>
+          <div id="content_cover_group" class="content">
+            <div class="inner_content">
+              <s_cover_rep>
+                <s_cover name='image_slide'>
+                  <div class="slide_area main_slide">
+                    <div class="inner_main_slide">
+                      <s_cover_item>
+                        <div class="slide_item">
+                          <a href="[##_cover_item_url_##]"
+                            style="background-image:url('<s_cover_item_thumbnail>https://img1.daumcdn.net/thumb/R1600x0.fwebp.q85/?fname=[##_cover_item_thumbnail_##]</s_cover_item_thumbnail>')"
+                            class="link_slide">
+                            <div class="inner_link_slide">
+                              <div class="slide_txt">
+                                <p class="txt_tit">[##_cover_item_title_##]</p>
+                                <p class="txt_cont">[##_cover_item_summary_##]</p>
+                              </div>
+                            </div>
+                          </a>
+                        </div>
+                      </s_cover_item>
+                    </div>
+
+                    <div class="box_arrow">
+                      <div class="inner_box_arrow">
+                        <button type="button" class="btn_arrow btn_prev">
+                          <span class="box_svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                              class="img_svg">
+                              <defs>
+                                <path id="mainSlideArrowLeft" d="M12 20L25 7l1.4 1.4L14.8 20l11.6 11.6L25 33z" />
+                              </defs>
+                              <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h40v40H0z" />
+                                <use fill="#fff" fill-rule="nonzero" xlink:href="#mainSlideArrowLeft" />
+                              </g>
+                            </svg>
+                          </span>
+                        </button>
+                        <button type="button" class="btn_arrow btn_next">
+                          <span class="box_svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                              class="img_svg">
+                              <defs>
+                                <path id="mainSlideArrowRight" d="M28 20L15 33l-1.4-1.4L25.2 20 13.6 8.4 15 7z" />
+                              </defs>
+                              <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h40v40H0z" />
+                                <use fill="#fff" fill-rule="nonzero" xlink:href="#mainSlideArrowRight" />
+                              </g>
+                            </svg>
+                          </span>
+                        </button>
+                      </div>
+                    </div> <!-- btn_arrow -->
+                  </div> <!-- main_slide -->
+                </s_cover>
+                <s_cover name='webzine'>
+                  <!-- scroll_area -->
+                  <div class="section_area section_type_wide">
+                    <h2 class="tit_section">
+                      <span class="txt_section">[##_cover_title_##]</span>
+                    </h2>
+                    <ul class="list_article list_type1 list_type_wide">
+                      <s_cover_item>
+                        <li>
+                          <a href="[##_cover_item_url_##]" class="link_thumb">
+                            <s_cover_item_thumbnail>
+                              <div class="box_thumb thumb_img"
+                                style="background-image: url('[##_cover_item_thumbnail_##]">
+                              </div>
+                            </s_cover_item_thumbnail>
+                            <div class="box_thumb no_img">
+                              <!-- 이미지 없거나 에러 일경우 class="box_thumb" 영역에 class="no_img" 추가, 내부에 아이콘 적용 -->
+                              <div class="default_img">
+                                <span class="box_svg">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                    class="img_svg">
+                                    <defs>
+                                      <path id="errorIconSvg"
+                                        d="M18.5 27.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM21 11h-2v13h2V11zm-1-9C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm0 34c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16a16 16 0 0 1-16 16z" />
+                                    </defs>
+                                    <g fill="none" fill-rule="evenodd">
+                                      <path d="M0 0h40v40H0z" />
+                                      <use fill="#fff" fill-rule="nonzero" xlink:href="#errorIconSvg" />
+                                    </g>
+                                  </svg>
+                                </span>
+                              </div>
+                            </div>
+                            <div class="cont_thumb">
+                              <s_cover_item_article_info>
+                                <strong class="txt_category">[##_cover_item_category_##]</strong>
+                              </s_cover_item_article_info>
+                              <p class="txt_thumb">[##_cover_item_title_##]</p>
+                              <p class="txt_summary">[##_cover_item_summary_##]</p>
+                            </div>
+                          </a>
+                        </li>
+                      </s_cover_item>
+                    </ul>
+                  </div> <!-- section_area -->
+                </s_cover>
+
+                <s_cover name='gallery'>
+                  <div class="section_area">
+                    <h2 class="tit_section">
+                      <span class="txt_section">[##_cover_title_##]</span>
+                    </h2>
+
+                    <ul class="list_post">
+                      <s_cover_item>
+                        <li class="item_post">
+
+                          <a href="[##_cover_item_url_##]" class="link_post item-thumbnail"
+                            <s_cover_item_thumbnail>style="background-image:url('[##_cover_item_thumbnail_##]')"
+                            </s_cover_item_thumbnail>>
+
+
+                            <div class="info">
+                              <strong class="name">[##_cover_item_title_##]</strong>
+                            </div>
+                          </a>
+                        </li>
+                      </s_cover_item>
+                    </ul>
+                  </div> <!-- section_area -->
+                </s_cover>
+
+                <s_cover name='slide_list1'>
+                  <div class="section_area scroll_area category_area">
+                    <h2 class="tit_section">[##_cover_title_##]</h2>
+                    <div class="wrap_scroller wrap_category_scroller">
+                      <div class="scroller">
+                        <s_cover_item>
+                          <div class="item_scroller">
+                            <div class="box_item">
+                              <a href="[##_cover_item_url_##]" title="[##_cover_item_title_##]" class="link_item">
+                                <s_cover_item_thumbnail>
+                                  <div class="box_thumb thumb_img"
+                                    style="background-image:url('[##_cover_item_thumbnail_##]')">
+                                  </div>
+                                </s_cover_item_thumbnail>
+                                <div class="box_thumb no_img" style="">
+                                  <!-- 이미지 없거나 에러 일경우 class="box_thumb" 영역에 class="no_img" 추가, 내부에 아이콘 적용 (동적 또는 리스트에 넣어 놓아도 됩니다.) -->
+                                  <div class="default_img">
+                                    <span class="box_svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                        class="img_svg">
+                                        <defs>
+                                          <path id="errorIconSvg"
+                                            d="M18.5 27.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM21 11h-2v13h2V11zm-1-9C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm0 34c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16a16 16 0 0 1-16 16z" />
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                          <path d="M0 0h40v40H0z" />
+                                          <use fill="#fff" fill-rule="nonzero" xlink:href="#errorIconSvg" />
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </div>
+                                <span class="txt_item">[##_cover_item_title_##]</span>
+                              </a>
+                            </div>
+                          </div>
+                        </s_cover_item>
+                      </div> <!-- scroller -->
+
+                      <div class="box_arrow">
+                        <button type="button" class="btn_arrow btn_prev">
+                          <span class="box_svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                              class="img_svg">
+                              <defs>
+                                <path id="mainCategoryArrowLeft" d="M12 20L25 7l1.4 1.4L14.8 20l11.6 11.6L25 33z" />
+                              </defs>
+                              <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h40v40H0z" />
+                                <use fill="#000" fill-rule="nonzero" xlink:href="#mainCategoryArrowLeft" />
+                              </g>
+                            </svg>
+                          </span>
+                        </button>
+                        <button type="button" class="btn_arrow btn_next">
+                          <span class="box_svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                              class="img_svg">
+                              <defs>
+                                <path id="mainCategoryArrowRight" d="M28 20L15 33l-1.4-1.4L25.2 20 13.6 8.4 15 7z" />
+                              </defs>
+                              <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h40v40H0z" />
+                                <use fill="#000" fill-rule="nonzero" xlink:href="#mainCategoryArrowRight" />
+                              </g>
+                            </svg>
+                          </span>
+                        </button>
+                      </div> <!-- box_arrow -->
+                    </div>
+                  </div>
+                </s_cover>
+
+                <s_cover name='slide_list2'>
+                  <div class="section_area scroll_area event_area">
+                    <h2 class="tit_section">
+                      <span class="txt_section">[##_cover_title_##]</span>
+                    </h2>
+                    <div class="wrap_scroller wrap_event_scroller">
+                      <div class="scroller">
+                        <s_cover_item>
+                          <div class="item_scroller">
+                            <div class="box_item">
+                              <a href="[##_cover_item_url_##]" title="[##_cover_item_title_##]" class="link_item">
+                                <s_cover_item_thumbnail>
+                                  <div class="box_thumb thumb_img"
+                                    style="background-image:url('[##_cover_item_thumbnail_##]')">
+                                  </div>
+                                </s_cover_item_thumbnail>
+                                <div class="box_thumb no_img" style="">
+                                  <!-- 이미지 없거나 에러 일경우 class="box_thumb" 영역에 class="no_img" 추가, 내부에 아이콘 적용 (동적 또는 리스트에 넣어 놓아도 됩니다.) -->
+                                  <div class="default_img">
+                                    <span class="box_svg">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                        class="img_svg">
+                                        <defs>
+                                          <path id="errorIconSvg"
+                                            d="M18.5 27.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM21 11h-2v13h2V11zm-1-9C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm0 34c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16a16 16 0 0 1-16 16z" />
+                                        </defs>
+                                        <g fill="none" fill-rule="evenodd">
+                                          <path d="M0 0h40v40H0z" />
+                                          <use fill="#fff" fill-rule="nonzero" xlink:href="#errorIconSvg" />
+                                        </g>
+                                      </svg>
+                                    </span>
+                                  </div>
+                                </div>
+                                <span class="txt_item">[##_cover_item_title_##]</span>
+                              </a>
+                            </div>
+                          </div>
+                        </s_cover_item>
+                      </div> <!-- scroller -->
+                      <div class="box_arrow">
+                        <button type="button" class="btn_arrow btn_prev">
+                          <span class="box_svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                              class="img_svg">
+                              <defs>
+                                <path id="mainEventArrowLeft" d="M12 20L25 7l1.4 1.4L14.8 20l11.6 11.6L25 33z" />
+                              </defs>
+                              <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h40v40H0z" />
+                                <use fill="#000" fill-rule="nonzero" xlink:href="#mainEventArrowLeft" />
+                              </g>
+                            </svg>
+                          </span>
+                        </button>
+                        <button type="button" class="btn_arrow btn_next">
+                          <span class="box_svg">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                              class="img_svg">
+                              <defs>
+                                <path id="mainEventArrowRight" d="M28 20L15 33l-1.4-1.4L25.2 20 13.6 8.4 15 7z" />
+                              </defs>
+                              <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h40v40H0z" />
+                                <use fill="#000" fill-rule="nonzero" xlink:href="#mainEventArrowRight" />
+                              </g>
+                            </svg>
+                          </span>
+                        </button>
+                      </div> <!-- btn_arrow -->
+                    </div>
+                  </div> <!-- event_area -->
+                </s_cover>
+
+                <s_cover name='text_list'>
+                  <div class="section_area">
+                    <h2 class="tit_section">
+                      <span class="txt_section">[##_cover_title_##]</span>
+                    </h2>
+                    <ul class="list_notice">
+                      <s_cover_item>
+                        <li class="item_notice">
+                          <a href="[##_cover_item_url_##]" class="link_notice">
+                            <span class="thumnail item-thumbnail"
+                              <s_cover_item_thumbnail>style="background-image:url('[##_cover_item_thumbnail_##]')"
+                              </s_cover_item_thumbnail>></span>
+                            <div class="info">
+                              <p class="tit_notice">[##_cover_item_title_##]</p>
+                              <p class="text">[##_cover_item_summary_##]</p>
+                              <s_cover_item_article_info>
+                                <span class="txt_date">[##_cover_item_date_##]</span>
+                              </s_cover_item_article_info>
+                            </div>
+                          </a>
+                        </li>
+                      </s_cover_item>
+                    </ul>
+                  </div>
+                </s_cover>
+              </s_cover_rep>
+            </div>
+          </div>
+        </s_cover_group>
+      </div>
+
+      <s_list>
+        <div class="wrap_content">
+          <div id="content_search_list" class="content content_article_rep">
+            <div class="inner_content">
+              <div id="content_search" class="content sub_content">
+                <div class="inner_content">
+                  <div class="section_area">
+                    <h2 class="tit_section">
+                      <span class="txt_section">[##_list_conform_##]</span>
+                    </h2>
+                    <ul class="list_article list_sub list_sub_type1">
+                      <s_list_rep>
+                        <li>
+                          <a href="[##_list_rep_link_##]" class="link_thumb">
+                            <!-- s_list 에 이미지가 없는 문제 -->
+                            <s_list_rep_thumbnail>
+                              <div class="box_thumb thumb_img" data-image="[##_list_rep_thumbnail_url_##]"
+                                style="background-image:url('//i1.daumcdn.net/thumb/C300x200.fwebp.q85/?fname=[##_list_rep_thumbnail_url_##]')">
+                              </div>
+                            </s_list_rep_thumbnail>
+                            <div class="box_thumb no_img" style="display:none;"></div>
+                            <div class="cont_thumb">
+
+                              <p class="txt_thumb">[##_list_rep_title_##]</p>
+
+                              <p class="thumb_info">
+                                <span class="date">[##_list_rep_regdate_##]</span>
+                                <span class="name">by [##_list_rep_author_##]</span>
+                              </p>
+                            </div>
+                          </a>
+                        </li>
+                      </s_list_rep>
+                    </ul>
+                  </div>
+                </div> <!-- inner_content -->
+              </div> <!-- content close -->
+
+            </div>
+          </div>
+        </div>
+      </s_list>
+
+      <!-- sub page -->
+      <div class="wrap_content wrap_detail_content">
+        <s_article_rep>
+          <!-- 메인 페이지에서 목록 표현 -->
+          <s_index_article_rep>
+            <div id="content_article_rep" class="content_list content_article_rep">
+              <div class="inner_content">
+                <a href="[##_article_rep_link_##]" class="link_thumb"
+                  data-tiara-action-name="블로그글_클릭"
+                  data-tiara-action-kind="ClickContent"
+                  data-tiara-copy="[##_article_rep_title_##]"
+                  data-tiara-image="[##_article_rep_thumbnail_url_##]"
+                  data-tiara-click_url="[##_blog_link_##][##_article_rep_link_##]"
+                  data-tiara-name="[##_article_rep_title_##]"
+                  data-tiara-provider="[##_title_##]"
+                  data-tiara-plink="[##_article_rep_link_##]"
+                  data-tiara-id="[##_article_rep_link_##]"
+                >
+                  <s_article_rep_thumbnail>
+                    <div class="box_thumb thumb_img"
+                      style="background-image:url('https://i1.daumcdn.net/thumb/R750x0.fwebp.q85/?fname=[##_article_rep_thumbnail_raw_url_##]')"></div>
+                  </s_article_rep_thumbnail>
+                  <div class="box_thumb no_img"></div>
+                  <div class="cont_thumb">
+                    <strong class="txt_title">[##_article_rep_title_##]</strong>
+                    <p class="txt_thumb">[##_article_rep_summary_##]</p>
+                    <p class="thumb_info">
+                      <span class="category">[##_article_rep_category_##]</span>
+                      <span class="date">[##_article_rep_date_##]</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div> <!-- content close -->
+          </s_index_article_rep>
+          <!-- // 메인 페이지에서 목록 표현 -->
+
+          <!-- 치환자 <s_article_rep> 적용 -->
+          <s_permalink_article_rep>
+            <div id="content_permallink_article" class="content sub_content sub_detail">
+              <div class="inner_content">
+                <div class="section_area detail_area">
+
+                  <h2 class="blind">상세 컨텐츠</h2>
+                  <!-- 글제목 -->
+                  <div class="box_article_tit">
+                    <h3 class="blind">본문 제목</h3>
+                    <p class="txt_sub_tit">[##_article_rep_title_##]</p>
+                    <div class="sub_tit_info">
+                      <span class="category"> <span class="txt_style"><a
+                            href="[##_article_rep_category_link_##]">[##_article_rep_category_##]</a></span></span>
+
+                      <p class="info_meta">
+                        <span class="name">by <span class="txt_style">[##_article_rep_author_##]</span></span>
+                        <span class="date">[##_article_rep_date_##]</span>
+                        [##_s_ad_isolation_##]
+                      </p>
+                    </div>
+                  </div>
+                  <!-- //글제목 -->
+                  <!-- 본문 -->
+                  <div class="box_article">
+                    <h3 class="blind">본문</h3>
+                    <div class="article_cont" id="article-view">
+                      <!-- 본문 내용 (치환자 적용 영역) -->
+                      <div class="article_util">
+                        <button type="button" class="util_like">
+                          <span class="blind">좋아요</span>
+                          <i class="icon_font icon-favorite-o"></i>
+                          <!-- 좋아요 클릭 시 쿨래스 변경 빈하트 class="icon-favorite-o", 채움 하트 class="icon-favorite" -->
+                          <span class="txt_count">-</span>
+                        </button>
+                        <div class="box_util">
+                          <!-- 댓글 달기 버튼 링크 이슈 있음 by osh -->
+                          <button type="button" class="util_comment" href="[##_article_rep_rp_link_##]">
+                            <span class="blind">댓글달기</span>
+                            <i class="icon_font icon-chat-o"></i>
+                            <span class="txt_count">[##_article_rep_rp_cnt_##]</span>
+                          </button>
+
+                        </div>
+                      </div>
+
+                      [##_article_rep_desc_##]
+
+                    </div>
+                  </div>
+                  <!-- //본문 -->
+
+                  <!-- 태그 -->
+                  <s_tag_label>
+                    <div class="box_tag_trail">
+                      <h2 class="tit_box">태그</h2>
+                      <div class="tag_cont">[##_tag_label_rep_##]</div>
+                    </div>
+                  </s_tag_label>
+                  <!-- //태그 -->
+
+                  <!-- 관련 글 -->
+                  <s_article_related>
+                    <div class="box_related_article">
+                      <h3 class="tit_box">관련글 <a href="[##_article_rep_category_link_##]" class="link_related">더보기</a>
+                      </h3>
+                      <ul class="list_article list_sub list_related">
+                        <s_article_related_rep>
+                          <li>
+                            <a href="[##_article_related_rep_link_##]"
+                              class="link_thumb [##_article_related_rep_type_##]">
+                              <s_article_related_rep_thumbnail>
+                                <div class="box_thumb thumb_img"
+                                  style="background-image:url('[##_article_related_rep_thumbnail_link_##]')">
+                                </div>
+                              </s_article_related_rep_thumbnail>
+                              <div class="box_thumb no_img">
+                                <div class="default_img">
+                                  <span class="box_svg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                      class="img_svg">
+                                      <defs>
+                                        <path id="errorIconSvg"
+                                          d="M18.5 27.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM21 11h-2v13h2V11zm-1-9C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm0 34c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16a16 16 0 0 1-16 16z">
+                                        </path>
+                                      </defs>
+                                      <g fill="none" fill-rule="evenodd">
+                                        <path d="M0 0h40v40H0z"></path>
+                                        <use fill="#fff" fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                          xlink:href="#errorIconSvg"></use>
+                                      </g>
+                                    </svg>
+                                  </span>
+                                </div>
+                              </div>
+                              <div class="cont_thumb">
+                                <p class="txt_thumb">[##_article_related_rep_title_##]
+                                </p>
+                                <p class="thumb_info">
+                                  <span class="date">[##_article_related_rep_date_##]</span>
+                                </p>
+                              </div>
+                            </a>
+                          </li>
+                        </s_article_related_rep>
+                      </ul>
+                    </div>
+                  </s_article_related>
+                  <!-- //관련 글 -->
+                  <!-- 댓글 -->
+
+                  <div class="box_comment">
+                    <s_rp>
+                      [##_comment_group_##]
+                    </s_rp>
+                  </div>
+                  <!-- //댓글 -->
+                </div>
+              </div>
+            </div>
+          </s_permalink_article_rep>
+        </s_article_rep>
+
+        <!-- page 디자인 -->
+        <s_page_rep>
+          <s_permalink_article_rep>
+            <div id="content_permallink_page" class="content sub_content">
+              <div class="inner_content">
+                <div class="section_area detail_area">
+                  <h2 class="blind">상세 컨텐츠</h2>
+                  <!-- 글제목 -->
+                  <div class="box_article_tit">
+                    <h3 class="blind">본문 제목</h3>
+                    <p class="txt_sub_tit">[##_article_rep_title_##]</p>
+                    <div class="sub_tit_info">
+                      <span class="date">[##_article_rep_date_##]</span>
+                    </div>
+                  </div>
+                  <!-- //글제목 -->
+                  <!-- 본문 -->
+                  <div class="box_article">
+                    <h3 class="blind">본문</h3>
+                    <div class="article_cont" id="article-view">
+                      <!-- 본문 내용 (치환자 적용 영역) -->
+                      [##_article_rep_desc_##]
+                    </div>
+                  </div>
+                  <!-- //본문 -->
+                </div>
+              </div>
+            </div>
+          </s_permalink_article_rep>
+        </s_page_rep>
+        <!-- // page 디자인 -->
+
+        <s_article_protected>
+          <s_index_article_rep>
+            <div id="content_protected_rep" class="content_list content_protected_rep">
+              <div class="inner_content">
+                <a href="[##_article_rep_link_##]" class="link_thumb">
+                  <div class="cont_thumb">
+                    <strong class="txt_title">[##_article_rep_title_##]</strong>
+                    <p class="txt_thumb">보호되어 있는 글입니다.</p>
+                    <p class="thumb_info">
+                      <span class="category">보호글</span>
+                      <span class="date">[##_article_rep_date_##]</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div> <!-- content close -->
+          </s_index_article_rep>
+          <s_permalink_article_rep>
+            <div id="content_permallink_protected" class="content sub_content sub_detail">
+              <div class="inner_content">
+                <div class="section_area detail_area">
+                  <h2 class="blind">상세 컨텐츠</h2>
+                  <!-- 글제목 -->
+                  <div class="box_article_tit">
+                    <h3 class="blind">본문 제목</h3>
+                    <p class="txt_sub_tit">[##_article_rep_title_##]</p>
+                    <div class="sub_tit_info">
+                      <span class="name">by <span class="txt_style">[##_article_rep_author_##]</span></span>
+                      <span class="date">[##_article_rep_date_##]</span>
+                      <span class="category">in <span class="txt_style">보호글</span></span>
+                    </div>
+                  </div>
+                  <!-- //글제목 -->
+                  <!-- 본문 -->
+                  <div class="box_article">
+                    <h3 class="blind">본문</h3>
+                    <div class="article_cont">
+                      <!-- 본문 내용 (치환자 적용 영역) -->
+                      <form class="protected_form" onsubmit="[##_article_dissolve_##]">
+                        <p>보호되어 있는 글입니다. 내용을 보시려면 비밀번호를 입력하세요.</p>
+                        <input type="password" id="[##_article_password_##]" name="[##_article_password_##]" value=""
+                          placeholder="비밀번호" />
+                        <button type="submit">확인</button>
+                      </form>
+                    </div>
+                  </div>
+                  <!-- //본문 -->
+                </div>
+              </div>
+            </div>
+          </s_permalink_article_rep>
+        </s_article_protected>
+
+        <s_notice_rep>
+          <s_index_article_rep>
+            <div id="content_notice_rep" class="content_list content_notice_rep">
+              <div class="inner_content">
+                <a href="[##_notice_rep_link_##]" class="link_thumb"
+                  data-tiara-action-name="블로그공지_클릭"
+                  data-tiara-action-kind="ClickContent"
+                  data-tiara-copy="[##_notice_rep_title_##]"
+                  data-tiara-click_url="[##_blog_link_##][##_notice_rep_link_##]"
+                  data-tiara-name="[##_notice_rep_title_##]"
+                  data-tiara-provider="[##_title_##]"
+                  data-tiara-plink="[##_notice_rep_link_##]"
+                  data-tiara-id="[##_notice_rep_link_##]"
+                >
+                  <s_notice_rep_thumbnail>
+                    <div class="box_thumb thumb_img" data-image="[##_notice_rep_thumbnail_url_##]"
+                      style="background-image:url('[##_notice_rep_thumbnail_url_##]')"></div>
+                  </s_notice_rep_thumbnail>
+                  <div class="cont_thumb">
+                    <strong class="txt_title">[##_notice_rep_title_##]</strong>
+                    <p class="txt_thumb">[##_notice_rep_summary_##]</p>
+                    <p class="thumb_info">
+                      <span class="category">공지사항</span>
+                      <span class="date">[##_notice_rep_date_##]</span>
+                    </p>
+                  </div>
+                </a>
+              </div>
+            </div> <!-- content close -->
+          </s_index_article_rep>
+          <s_permalink_article_rep>
+            <div id="content_permallink_notice" class="content sub_content">
+              <div class="inner_content">
+                <div class="section_area detail_area">
+                  <h2 class="blind">상세 컨텐츠</h2>
+                  <!-- 글제목 -->
+                  <div class="box_article_tit">
+                    <h3 class="blind">본문 제목</h3>
+                    <p class="txt_sub_tit">[##_notice_rep_title_##]</p>
+                    <div class="sub_tit_info">
+                      <span class="date">[##_notice_rep_date_##]</span>
+                    </div>
+                  </div>
+                  <!-- //글제목 -->
+                  <!-- 본문 -->
+                  <div class="box_article">
+                    <h3 class="blind">본문</h3>
+                    <div class="article_cont" id="article-view">
+                      <!-- 본문 내용 (치환자 적용 영역) -->
+                      [##_notice_rep_desc_##]
+                    </div>
+                  </div>
+                  <!-- //본문 -->
+                </div>
+              </div>
+            </div>
+          </s_permalink_article_rep>
+        </s_notice_rep>
+
+        <!-- sidebar -->
+        <div id="sidebar" class="sidebar">
+          <h2 class="blind">추가 정보</h2>
+          <s_sidebar>
+            <s_sidebar_element>
+              <div class="section_area">
+                <h3 class="tit_section">인기글</h3>
+                <ol class="list_article list_sub list_sidebar">
+                  <s_rctps_popular_rep>
+                    <li>
+                      <a href="[##_rctps_rep_link_##]" class="link_thumb">
+                        <s_rctps_rep_thumbnail>
+                          <div class="box_thumb thumb_img" style="background-image:url('[##_rctps_rep_thumbnail_##]')">
+                            <span class="item_count">-</span>
+                          </div>
+                        </s_rctps_rep_thumbnail>
+                        <div class="box_thumb no_img">
+                          <div class="default_img">
+                            <span class="box_svg">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                class="img_svg">
+                                <defs>
+                                  <path id="errorIconSvg"
+                                    d="M18.5 27.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM21 11h-2v13h2V11zm-1-9C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm0 34c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16a16 16 0 0 1-16 16z">
+                                  </path>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                  <path d="M0 0h40v40H0z"></path>
+                                  <use fill="#fff" fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="#errorIconSvg"></use>
+                                </g>
+                              </svg>
+                            </span>
+                          </div>
+                          <span class="item_count">-</span>
+                        </div>
+
+                        <div class="cont_thumb">
+                          <strong class="txt_thumb">[##_rctps_rep_title_##]</strong>
+                          <p class="txt_date">[##_rctps_rep_date_##]</p>
+                        </div>
+                      </a>
+                    </li>
+                  </s_rctps_popular_rep>
+                </ol>
+              </div> <!-- 인기글 -->
+            </s_sidebar_element>
+
+
+            <s_sidebar_element>
+              <div class="section_area">
+                <h3 class="tit_section">최신글</h3>
+                <ol class="list_article list_sub list_sidebar list_recent">
+                  <s_rctps_rep>
+                    <li>
+                      <a href="[##_rctps_rep_link_##]" class="link_thumb">
+                        <s_rctps_rep_thumbnail>
+                          <div class="box_thumb thumb_img" style="background-image:url('[##_rctps_rep_thumbnail_##]')">
+                            <span class="item_count">-</span>
+                          </div>
+                        </s_rctps_rep_thumbnail>
+                        <div class="box_thumb no_img">
+                          <div class="default_img">
+                            <span class="box_svg">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"
+                                class="img_svg">
+                                <defs>
+                                  <path id="errorIconSvg"
+                                    d="M18.5 27.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM21 11h-2v13h2V11zm-1-9C10.059 2 2 10.059 2 20s8.059 18 18 18 18-8.059 18-18S29.941 2 20 2zm0 34c-8.837 0-16-7.163-16-16S11.163 4 20 4s16 7.163 16 16a16 16 0 0 1-16 16z">
+                                  </path>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                  <path d="M0 0h40v40H0z"></path>
+                                  <use fill="#fff" fill-rule="nonzero" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    xlink:href="#errorIconSvg"></use>
+                                </g>
+                              </svg>
+                            </span>
+                          </div>
+                          <span class="item_count">-</span>
+                        </div>
+                        <div class="cont_thumb">
+                          <strong class="txt_thumb">[##_rctps_rep_title_##]</strong>
+                          <p class="txt_category">[##_rctps_rep_category_##]</p>
+                        </div>
+                      </a>
+                    </li>
+                  </s_rctps_rep>
+                </ol>
+              </div> <!-- 최신글 -->
+            </s_sidebar_element>
+          </s_sidebar>
+        </div>
+        <!-- // sidebar -->
+      </div>
+      <!-- // sub page // .wrap_detail_content -->
+
+      <div class="wrap_content">
+        <div class="content">
+          <div class="section_btm_area">
+
+            <!-- 태그 magz 디자인 -->
+            <s_tag>
+              <div class="box_tag_trail">
+                <h3 class="tit_box">태그</h3>
+                <div class="tag_cont">
+                  <!-- 마지막 콤마(,) 를 javascript 로 지워줘야 하나. by osh -->
+                  <s_tag_rep>
+                    <a href="[##_tag_link_##]" class="[##_tag_class_##]">[##_tag_name_##]</a>,
+                  </s_tag_rep>
+                </div>
+              </div>
+            </s_tag>
+            <!-- //태그 magz 디자인 -->
+
+            <!-- log magz 디자인 -->
+            <s_local>
+              <section id="localog" class="box_tag_trail row nonEntry main">
+                <h3 class="tit_box">Local Log</h3>
+                <s_local_spot_rep>
+                  <div class="spot" style="margin-left: [##_local_spot_depth_##]px">
+                    [##_local_spot_##]
+                  </div>
+                </s_local_spot_rep>
+                <s_local_info_rep>
+                  <div class="info" style="margin-left: [##_local_info_depth_##]px">
+                    <a href="[##_local_info_link_##]">[##_local_info_title_##]</a>
+                  </div>
+                </s_local_info_rep>
+              </section>
+            </s_local>
+            <!-- // log magz 디자인 -->
+
+            <s_guest>
+              [##_guestbook_group_##]
+            </s_guest>
+          </div>
+        </div>
+      </div>
+
+      <s_paging>
+        <div class="wrap_content wrap_content_paging ">
+          <div id="content" class="content sub_content">
+            <div class="inner_paging">
+              <!-- section_area -->
+              <div class="section_paging ">
+                <h2 class="blind">페이징</h2>
+                <!-- 페이징 치환자 적용 영역 -->
+                <div class="paging">
+                  <a [##_prev_page_##] class="link_page link_prev [##_no_more_prev_##]">
+                    <svg width="10" height="18" viewBox="0 0 10 18" class="img_svg">
+                      <path d="M9 18l1-1-8-8 8-8-1-1-9 9"></path>
+                    </svg>
+                    <span class="txt_page">이전</span>
+                  </a>
+                  <div class="paging_num">
+                    <!-- 페이징 치환자 수정 -->
+                    <s_paging_rep>
+                      <a [##_paging_rep_link_##] class="link_num">[##_paging_rep_link_num_##]</a>
+                    </s_paging_rep>
+                  </div>
+                  <a [##_next_page_##] class="link_page link_next [##_no_more_next_##]">
+                    <span class="txt_page">다음</span>
+                    <svg width="10" height="18" viewBox="0 0 10 18" class="img_svg">
+                      <path d="M1 0L0 1l8 8-8 8 1 1 9-9"></path>
+                    </svg>
+                  </a>
+                </div>
+                <!-- //페이징 치환자 적용 영역 -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </s_paging>
+      <!-- sub page -->
+
+      [##_revenue_list_lower_##]
+
+      <div id="footer" class="footer">
+        <div class="inner_footer">
+          <div class="area_select">
+            <div class="box_select">
+              <div class="inner_box">
+                <select class="opt_select">
+                  <option>패밀리사이트</option>
+                  <s_link_rep>
+                    <option value="[##_link_site_##]" data-href="[##_link_url_##]">[##_link_site_##]
+                    </option>
+                  </s_link_rep>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="area_address">
+            <div class="info_link">
+              <s_if_var_footerLink1Name>
+                <a href="[##_var_footerLink1Url_##]" class="link_info">[##_var_footerLink1Name_##]</a>
+              </s_if_var_footerLink1Name>
+              <s_if_var_footerLink2Name>
+                <a href="[##_var_footerLink2Url_##]" class="link_info">[##_var_footerLink2Name_##]</a>
+              </s_if_var_footerLink2Name>
+              <s_if_var_footerLink3Name>
+                <a href="[##_var_footerLink3Url_##]" class="link_info">[##_var_footerLink3Name_##]</a>
+              </s_if_var_footerLink3Name>
+              <s_if_var_footerLink4Name>
+                <a href="[##_var_footerLink4Url_##]" class="link_info">[##_var_footerLink4Name_##]</a>
+              </s_if_var_footerLink4Name>
+            </div>
+            <address class="box_address">
+              <s_if_var_logoFooterImage>
+                <img src="[##_var_logoFooterImage_##]" class="footer_logo" alt="푸터 로고">
+              </s_if_var_logoFooterImage>
+              <s_not_var_logoFooterImage>
+                <span class="txt_flogo">[##_title_##]</span>
+              </s_not_var_logoFooterImage>
+
+              <span class="txt_address">[##_var_footerCopyright_##]</span>
+            </address>
+            <div class="area_sns">
+              <s_if_var_snsFacebook>
+                <a href="[##_var_snsFacebook_##]" title="facebook" class="link_sns link_facebook">
+                  <img src="./images/ico_facebook.svg" alt="페이스북">
+                </a>
+              </s_if_var_snsFacebook>
+              <s_if_var_snsTwitter>
+                <a href="[##_var_snsTwitter_##]" title="twitter" class="link_sns link_twitter">
+                  <img src="./images/ico_twitter.svg" alt="트위터">
+                </a>
+              </s_if_var_snsTwitter>
+              <s_if_var_snsInstagram>
+                <a href="[##_var_snsInstagram_##]" title="instagram" class="link_sns link_instagram">
+                  <img src="./images/ico_instagram.svg" alt="인스타그램">
+                </a>
+              </s_if_var_snsInstagram>
+              <s_if_var_snsYoutube>
+                <a href="[##_var_snsYoutube_##]" title="youtube" class="link_sns link_youtube">
+                  <img src="./images/ico_youtube.svg" alt="유투브">
+                </a>
+              </s_if_var_snsYoutube>
+              <s_if_var_email>
+                <a href="mailto:[##_var_email_##]" title="mail" class="link_sns link_email">
+                  <img src="./images/ico_mail.svg" alt="메일">
+                </a>
+              </s_if_var_email>
+            </div>
+          </div>
+        </div> <!-- inner_footer -->
+      </div> <!-- footer close -->
+    </div> <!-- container close -->
+    </div>
+  </s_t3>
+
+</body>
+
+</html>
