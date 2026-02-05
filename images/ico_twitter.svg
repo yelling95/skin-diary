@@ -30,7 +30,7 @@
 <defs>
     <style>
       .cls-1, .cls-2, .cls-4 {
-        fill: #757575;
+        fill: #000;
       }
 
       .cls-1, .cls-3, .cls-4 {

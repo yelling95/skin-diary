@@ -90,7 +90,7 @@
 		</variable>
 		<variable>
 			<name>colorSet</name>
-			<label>컬러셋</label>
+			<label>테마</label>
 			<description></description>
 			<type>SELECT</type>
 			<option><![CDATA[
