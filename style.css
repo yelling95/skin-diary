@@ -433,6 +433,10 @@ select::-ms-expand {
   display: none;
 }
 
+.tt_box_namecard {
+  display: none;
+}
+
 /* header */
 .header {
   height: 86px;
@@ -560,7 +564,7 @@ select::-ms-expand {
   text-overflow: ellipsis;
   white-space: nowrap;
   text-align: left;
-  color: #666;
+  color: #000;
 }
 
 .fix_header .area_util {
@@ -1718,9 +1722,10 @@ select::-ms-expand {
 }
 
 .detail_area .tit_box {
-  padding-bottom: 11px;
+  padding-bottom: 24px;
   text-align: left;
-  font-size: 16px;
+  font-size: 13px;
+  color: #2c2e2e;
 }
 
 .detail_area .box_tag_trail .tit_box {
@@ -1767,9 +1772,9 @@ select::-ms-expand {
 
 .box_related_article .link_related {
   float: right;
-  font-size: 15px;
+  font-size: 13px;
   text-decoration: none;
-  color: #666;
+  color: #2c2e2e;
   font-weight: 500;
 }
 
@@ -3791,6 +3796,10 @@ select::-ms-expand {
   margin: 30px auto;
 }
 
+.tt-comment-cont {
+  padding-top: 24px;
+}
+
 .tt-comment-cont .tt-box-total {
   padding-top: 12px;
   border-bottom: 0;
@@ -3806,11 +3815,11 @@ select::-ms-expand {
 }
 
 .tt-comment-cont .tt-wrap-cmt .tt-link-user {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .tt-comment-cont .tt-wrap-cmt .tt_desc {
-  font-size: 16px;
+  font-size: 14px;
   color: rgba(0, 0, 0, 0.84);
 }
 
@@ -3819,11 +3828,20 @@ select::-ms-expand {
 }
 
 .tt-comment-cont .tt-wrap-cmt .tt_txt_g {
-  color: #e0605b;
+  color: #000;
 }
 
 .tt-comment-cont .tt-link-comment .tt_num_g {
-  color: #e0605b;
+  color: #000;
+}
+
+.tt-link-comment .tt_txt_g {
+  font-size: 13px;
+}
+
+.tt-thumbnail:after {
+  border: none;
+  box-shadow: unset;
 }
 
 .tt-comment-cont .tt-btn_register {
@@ -3831,7 +3849,7 @@ select::-ms-expand {
   height: 36px;
   background-color: #fff;
   border-radius: 0;
-  border-color: #000;
+  border-color: #d8d8d8;
   color: #000;
 }
 
@@ -3845,6 +3863,12 @@ select::-ms-expand {
   background-color: #000;
   border-color: #000;
   color: #fff;
+}
+
+.menu_toolbar .btn_tool_type1 {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
 }
 
 /* 전체 공통 */
