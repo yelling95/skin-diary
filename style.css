@@ -96,6 +96,10 @@ body {
   -webkit-text-size-adjust: 100%;
 }
 
+body.theme_vintage {
+  background-color: #f4ece0;
+}
+
 /* 컬러셋 */
 /* 컬러셋: black */
 .theme_black .header h1 a {
@@ -232,6 +236,10 @@ body {
   color: #000 !important;
 }
 
+.theme_vintage .ly_area {
+  background-color: #f4ece0;
+}
+
 /* black: 서브상세 고정메뉴 */
 
 /* black: 푸터 */
@@ -248,18 +256,22 @@ body {
   color: #000;
 }
 
+.theme_red .header h1 a {
+  color: #f25555;
+}
+
 /* 컬러셋: blue */
 .theme_vintage .header h1 a {
-  color: #4167d9;
+  color: #f25555;
 }
 
 .theme_vintage .header .logo .link_logo {
-  fill: #4167d9;
+  fill: #f25555;
 }
 
 /* blue: 메뉴, 검색 레이어 공통 */
 .theme_vintage .ly_area .ly_logo a {
-  color: #4167d9;
+  color: #f25555;
 }
 
 .theme_vintage .ly_area .ly_logo .link_logo {
@@ -268,20 +280,20 @@ body {
 
 /* blue: 메뉴 레이어 */
 .theme_vintage .nav .list_category .link_category {
-  color: #4167d9;
+  color: #f25555;
 }
 
 .theme_vintage .nav .list_sub_category .link_menu .count {
-  color: #4167d9;
+  color: #f25555;
 }
 
 /* blue: 검색 레이어 */
 .theme_vintage .search_area .box_form.on .inp_search {
-  color: #4167d9;
+  color: #f25555;
 }
 
 .theme_vintage .search_area .box_form.on {
-  border-bottom-color: #4167d9;
+  border-bottom-color: #f25555;
 }
 
 .theme_vintage .search_area .box_form.on .btn_search_del {
@@ -290,54 +302,55 @@ body {
 
 /* blue: 슬라이드 */
 .theme_vintage .main_slide .slick-dots .slick-active {
-  background-color: #4572cf;
+  background-color: #f25555;
 }
 
 /* blue: 메인 컨텐츠 */
 
 .theme_vintage .content .section_area .tit_section {
-  color: #4572cf;
+  color: #f25555;
 }
 
 .theme_vintage .content .section_area .tit_section .ico_arrow .svg_bg {
-  fill: #4572cf;
+  fill: #f25555;
 }
 
 .theme_vintage .list_type_wide .txt_category {
-  color: #4572cf;
+  color: #f25555;
 }
 
 .theme_vintage .list_notice .link_notice .txt_category {
-  color: #4572cf;
+  color: #f25555;
 }
 
 /* blue: 서브 상세 */
 .theme_vintage .box_article_tit .txt_sub_tit {
-  color: #4572cf;
+  color: #f25555;
 }
 
 .theme_vintage .box_article_tit .sub_tit_info .txt_style a {
-  color: #4572cf;
+  color: #f25555;
 }
 
 .theme_vintage .box_article .article_cont .txt_color {
-  color: #4572cf;
+  color: #f25555;
 }
 
 .theme_vintage .box_tag_trail .tag_cont a {
-  color: #4572cf;
+  color: #fff;
+  background-color: rgb(151, 126, 110);
 }
 
 .theme_vintage .box_comment .comment_area .btn_more {
-  color: #4572cf;
+  color: #f25555;
 }
 
 .theme_vintage .box_comment .comment_info .txt_style {
-  color: #4572cf;
+  color: #f25555;
 }
 
 .theme_vintage .comment_item .comment .comment_body .control a {
-  color: #4572cf;
+  color: #f25555;
 }
 
 .theme_vintage
@@ -347,19 +360,19 @@ body {
   .author_info
   .details
   .link_notify {
-  color: #4572cf;
+  color: #f25555;
 }
 
 .theme_vintage .box_comment_write .register_area .btn_register {
-  background-color: #4572cf;
+  background-color: #f25555;
 }
 
 .theme_vintage .box_comment .comment_area .btn_more:before {
-  background-color: #4572cf;
+  background-color: #f25555;
 }
 
 .theme_vintage .box_comment .comment_area .btn_more:after {
-  background-color: #4572cf;
+  background-color: #f25555;
 }
 
 .theme_vintage .sidebar .tit_section {
@@ -367,30 +380,30 @@ body {
 }
 
 .theme_vintage .list_article.list_sidebar .link_thumb .box_thumb .item_count {
-  background-color: #4572cf;
+  background-color: #f25555;
 }
 
 .theme_vintage .txt_flogo {
-  color: #4572cf !important;
+  color: #f25555 !important;
 }
 
 .theme_vintage .box_article .article_cont a {
-  color: #4572cf;
+  color: #f25555;
 }
 
 .theme_vintage .footnote a {
-  color: #4572cf !important;
+  color: #f25555 !important;
 }
 
 .theme_vintage .content_list .link_thumb .cont_thumb .thumb_info .category {
-  color: #4572cf;
+  color: #f25555;
 }
 
 /* blue: 서브상세 고정메뉴 */
 
 /* blue: 푸터 */
 .theme_vintage .footer .area_address .box_address .box_svg .img_svg {
-  fill: #4572cf;
+  fill: #f25555;
 }
 
 /* end -- skin colorset -- */
@@ -443,12 +456,35 @@ select::-ms-expand {
   /* box-shadow:
     0 1px rgba(0, 0, 0, 0.1),
     0 -1px rgba(0, 0, 0, 0.1); */
-  background-color: #fff;
   z-index: 9999;
   transition: background 0.1s;
   backdrop-filter: saturate(180%) blur(16px);
   -webkit-backdrop-filter: saturate(180%) blur(16px);
+}
+
+.theme_black .header {
   border-bottom: 1px solid #000;
+}
+
+.theme_red .header {
+  border-bottom: 1px solid #000;
+}
+
+.theme_vintage .header {
+  border-bottom: 1px solid rgb(151, 126, 110);
+}
+
+.theme_black .tt-box-textarea .tt-inner-g {
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.theme_red .tt-box-textarea .tt-inner-g {
+  border: 1px solid rgb(216, 216, 216);
+}
+
+.theme_vintage .tt-box-textarea .tt-inner-g {
+  border: 1px solid #fff;
+  background-color: #fff;
 }
 
 .header:after {
@@ -3853,15 +3889,43 @@ select::-ms-expand {
   color: #000;
 }
 
+.theme_vintage .tt-comment-cont .tt-btn_register {
+  border: 0;
+}
+
 .tt-comment-cont .tt-btn_register:hover {
   background-color: #000;
   border-color: #000;
   color: #fff;
 }
 
+.theme_red .tt-comment-cont .tt-btn_register:hover {
+  background-color: #f25555;
+  border-color: #f25555;
+  color: #fff;
+}
+
+.theme_vintage .tt-comment-cont .tt-btn_register:hover {
+  background-color: #f25555;
+  border-color: #f25555;
+  color: #fff;
+}
+
 .tt-comment-cont .tt-btn_register:focus {
   background-color: #000;
   border-color: #000;
+  color: #fff;
+}
+
+.theme_red .tt-comment-cont .tt-btn_register:focus {
+  background-color: #f25555;
+  border-color: #f25555;
+  color: #fff;
+}
+
+.theme_vintage .tt-comment-cont .tt-btn_register:focus {
+  background-color: #f25555;
+  border-color: #f25555;
   color: #fff;
 }
 
